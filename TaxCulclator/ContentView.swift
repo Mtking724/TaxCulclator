@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var inputText = ""
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            TextField("ここに文字を入力", text: $inputText)
+            Button("計算") {
+            }
+            .padding()
+            Text("価格:")
+            Text("消費税8%:")
+            Text("消費税10%:")
         }
         .padding()
     }
