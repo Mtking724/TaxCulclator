@@ -11,7 +11,8 @@ struct ContentView: View {
     @State var inputText = ""
     
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
+            //ここに文字を入力は入力がないときのヒント
             TextField("ここに文字を入力", text: $inputText)
             Button("計算") {
             }
